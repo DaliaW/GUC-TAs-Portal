@@ -1,4 +1,5 @@
 # GUC TA's Portal
+![login screenshot](https://user-images.githubusercontent.com/47950134/165823207-be77fb32-c292-48ff-9780-746882fa8eca.png)
 - To launch the server: npm /server/index.js
 - The server is listening to port 3000
 - for seeded data (some locations/departments/faculties/staff members) please uncomment "dummy.seedDB();" found in index.js, then run once then comment it back again after seeing the last message "Seeded TA successfully"
