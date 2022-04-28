@@ -1,0 +1,45 @@
+{
+  "name": "milestone-1-team51",
+  "version": "1.0.0",
+  "description": "- To launch the server: npm /server/index.js\r - The server is listening to port 5000\r - routes:",
+  "main": "/server/index.js",
+  "scripts": {
+    "start": "nodemon ./server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guc-met/milestone-1-team51.git"
+  },
+  "author": "Sarah Abdelfattah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guc-met/milestone-1-team51/issues"
+  },
+  "homepage": "https://github.com/guc-met/milestone-1-team51#readme",
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@hapi/joi": "^17.1.1",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "express-jwt-blacklist": "^1.1.0",
+    "express-session": "^1.17.1",
+    "joi": "^17.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.7",
+    "node": "^15.3.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "path": "^0.12.7",
+    "react-date-picker": "^8.0.6",
+    "react-time-picker": "^4.1.2",
+    "validator": "^13.5.2"
+  }
+}

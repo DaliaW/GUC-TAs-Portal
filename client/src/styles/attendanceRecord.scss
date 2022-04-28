@@ -1,0 +1,76 @@
+@import "./colorSchema";
+
+.record-container {
+    margin-bottom: 25px;
+    width: 340px;
+    border-radius: 10px;
+    background: white;
+    padding: 15px 25px;
+    box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.64);
+
+    h6 {
+        margin: 5px 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .attendance-status {
+        margin: 0;
+        transform: translateY(-5px);
+    }
+
+    .status {
+        font-size: 18px;
+        display: inline;
+        font-weight: bold;
+        color: $primary-blue;
+    }
+
+    .Present {
+        margin: 0;
+        color: green;
+    }
+
+    .Absent {
+        color: $primary-red;
+    }
+}
+
+.myAttendanceRecord-container {
+    width: 100%;
+    padding-top: 30px;
+
+    .myAttendanceRecord-inner-container {
+        margin: auto;
+        width: 90%;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+
+    h4 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-family: 'Times New Roman',
+            Times,
+            serif;
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-left: 70px;
+    }
+
+    .full-record,
+    .missing-record {}
+
+    .full-record {}
+
+    .missing-record {}
+}

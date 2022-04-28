@@ -1,0 +1,33 @@
+@import './colorSchema';
+
+.btn {
+    // background: inherit;
+    width: 180px;
+    border: none;
+
+    &:focus,
+    &:active {
+        border: none;
+    }
+}
+
+.RequestsDropDown {
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .crud-inner-container {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .request-select {
+        width: 70%;
+        margin: 7px auto;
+        padding: 10px 20px;
+    }
+}

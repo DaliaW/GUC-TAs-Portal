@@ -1,0 +1,100 @@
+@import "./colorSchema";
+
+.notification-container {
+    position: fixed;
+    right: 10px;
+    top: 70px;
+    width: 380px;
+    z-index: 998;
+    border-radius: 10px;
+    height: 350px;
+    padding: 20px 25px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.64);
+    background: rgb(255, 255, 255);
+
+    h3 {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    hr {
+        margin: 2px auto;
+    }
+
+    .all-notifications {
+        height: 90%;
+        overflow-y: scroll;
+
+        .notification-inner-container {
+            display: flex;
+            flex-direction: row;
+            padding: 12px 15px;
+            margin: 8px auto;
+            align-content: center;
+            border-bottom: 1px solid rgb(215, 215, 215);
+            margin: 0 auto;
+
+            .notification-content {
+                margin-left: 10px;
+
+                h6 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    align-self: center;
+                    font-size: 0.8rem;
+                    color: gray;
+                }
+
+                h5 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    align-self: center;
+                    font-size: 0.95rem;
+                }
+            }
+        }
+
+        .not-seen {
+            background-color: rgb(242, 242, 242);
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .notification-container {
+        position: relative;
+        left: 90px;
+        width: 70%;
+        margin-bottom: 80px;
+        margin-right: 30px;
+
+        .all-notifications {
+            .notification-inner-container {
+                padding: 12px 5px;
+
+                .notification-content {
+                    margin-left: 10px;
+
+                    h6 {
+                        font-size: 0.7rem;
+                    }
+
+                    h5 {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .sb-avatar,
+    .sb-avatar__text {
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .notification-container {
+        left: 70px;
+        width: 70%;
+    }
+}

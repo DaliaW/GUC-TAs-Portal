@@ -1,0 +1,170 @@
+@import "./colorSchema";
+
+#homepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .left-hp {
+        width: 70%;
+
+        .inner-homepage-box {
+            width: 80%;
+            margin: 45px auto 0 auto;
+            // border: 1px outset black;
+            padding: 30px 50px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 8px 10px 10px 0px rgba(0, 0, 0, 0.64);
+
+            li {
+                border: 1px solid rgba(0, 0, 0, 0.125);
+                border-radius: 10px;
+                padding: 1px 3px;
+                margin: 2px auto;
+                list-style-type: none;
+                width: 70%;
+                font-size: 18px;
+                font-family: 'Segoe UI';
+
+                h5 {
+                    display: inline;
+                    font-weight: bold;
+                    overflow-wrap: break-word;
+                }
+
+                h6 {
+                    display: inline;
+                    overflow-wrap: break-word;
+                }
+            }
+
+            .hompage-btns {
+                margin-top: 20px;
+
+                .attendanceRecord-btn {
+                    display: block;
+                    border-radius: 10px;
+                    color: white;
+                    background: $primary-blue;
+                    padding: 2px 10px;
+                    width: 45%;
+                    margin: 0px auto 10px auto;
+
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.64);
+                    }
+                }
+            }
+        }
+    }
+
+    .right-hp {
+        width: 30%;
+        margin: 80px 0 0 0;
+        transform: translateX(-70px);
+
+        img {
+            display: block;
+            margin: 0px auto;
+            width: 90%;
+            height: 60%;
+        }
+
+        button {
+            display: flex;
+            margin: 10px auto;
+            min-width: 175px;
+            flex-direction: row;
+            justify-content: flex-start;
+            border-radius: 10px;
+
+            img {
+                margin: 0 10px;
+                width: 20px;
+                height: 20px;
+            }
+
+            h6 {
+                align-self: center;
+                margin-left: 10px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.64);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #homepage {
+        .right-hp {
+            transform: translateX(-20px);
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #homepage {
+        flex-direction: column-reverse;
+
+        .left-hp {
+            width: 100%;
+
+            .inner-homepage-box {
+                width: 80%;
+
+                li {
+                    width: 100%;
+                }
+
+                .attendanceRecord-btn {
+                    width: 65%;
+                }
+            }
+        }
+
+        .right-hp {
+            width: 100%;
+            margin: 50px 0 0 20px;
+
+            img {
+                width: 50%;
+                height: 60%;
+            }
+
+            button {
+                width: 50%;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    #homepage {
+        .left-hp {
+            .inner-homepage-box {
+                width: 80%;
+                padding: 30px 20px;
+
+                li {
+                    width: 100%;
+                }
+
+                .attendanceRecord-btn {
+                    width: 85%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,217 @@
+@import './colorSchema';
+
+.profile-inner-container {
+    padding-top: 5%;
+
+    .profile-all {
+        width: 80%;
+        margin: auto;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .profile-form {
+            width: 90%;
+            margin: auto;
+            background: white;
+            box-shadow: 8px 10px 10px 0px rgba(0, 0, 0, 0.64);
+            border-radius: 10px;
+            padding: 40px;
+
+            .profile-formControl {
+                border-radius: 10px;
+                display: block;
+                margin: 5px 0;
+                border: 2px solid #00182941;
+                width: 100%;
+                padding: 2px 10px 5px 10px;
+                margin: 10px auto;
+
+                .MuiInputLabel-formControl {
+                    font-size: 24px;
+                    color: black;
+                    top: 10px;
+                    left: 10px;
+                }
+
+                .MuiInput-formControl {
+                    margin-top: 25px;
+                    width: 100%;
+                    font-size: 18px;
+                }
+
+                .MuiSelect-selectMenu {
+                    width: 100%;
+                }
+            }
+
+            .toUpdate {
+                background: rgba(238, 238, 238, 0.571);
+                border: $primary-navy-blue 2px solid;
+            }
+        }
+
+        .profile-buttons {
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+
+            .profile-btn,
+            .profile-update-btn,
+            .profile-add-btn,
+            .profile-change-password-btn {
+                border-radius: 10px;
+                width: 30%;
+                color: white;
+                padding: 5px 0;
+                border: none;
+                margin: 10px;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.64);
+                }
+            }
+
+            .profile-update-btn {
+                &:hover {
+                    background: $secondary-blue;
+                }
+            }
+
+            .profile-add-btn {
+                background: $primary-green;
+
+                &:hover {
+                    background: $secondary-green;
+                }
+            }
+
+            .profile-change-password-btn {
+                background: $primary-navy-blue;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    background: $secondary-navy-blue;
+                }
+            }
+
+            .profile-add-btn {
+                background: $primary-green;
+
+                &:hover {
+                    background: $secondary-green;
+                }
+            }
+
+        }
+    }
+}
+
+@media all and (max-width: 470px) {
+    .profile-inner-container {
+        .profile-all {
+            width: 90%;
+
+            .profile-form {
+                width: 95%;
+                padding-top: 20px;
+
+                .profile-formControl {
+                    .MuiInputLabel-formControl {
+                        top: 8px;
+                        font-size: 20px !important;
+                    }
+
+                    .MuiInput-formControl {
+                        font-size: 16px;
+                        margin-top: 40px;
+                    }
+                }
+            }
+
+            .profile-buttons {
+                flex-direction: column;
+
+                .profile-update-btn,
+                .profile-change-password-btn {
+                    width: 80%;
+                    margin: 5px auto;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 760px) {
+    .profile-inner-container {
+        padding-top: 3%;
+
+        .profile-all {
+            .profile-form {
+                .profile-formControl {
+                    width: 80%;
+
+                    .MuiInputLabel-formControl {
+                        position: inherit;
+                        margin-right: 20px;
+                        vertical-align: middle;
+                        display: inline;
+                        font-size: 18px;
+                        top: 0;
+                    }
+
+                    .MuiInput-formControl {
+                        margin-top: 0px;
+                        width: 50%;
+                        position: absolute;
+                        right: 15px;
+                        bottom: 3px;
+
+                        .MuiInputBase-input.Mui-disabled {
+                            color: rgba(0, 0, 0, 0.632);
+                        }
+
+                        .MuiInputBase-input {
+                            padding: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1068px) {
+    .profile-inner-container {
+        .profile-all {
+            .profile-form {
+                .profile-formControl {
+                    .MuiInput-formControl {
+                        width: 66%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1550px) {
+    .profile-inner-container {
+        .profile-all {
+            .profile-form {
+                .profile-formControl {
+                    .MuiInput-formControl {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

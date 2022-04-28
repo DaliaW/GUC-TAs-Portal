@@ -1,0 +1,314 @@
+@import "./colorSchema";
+
+.crud-button {
+    min-width: 200px;
+    padding: 8px 10px 8px 15px;
+    border-radius: 10px;
+    margin: 30px 20px 20px 20px;
+    box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.64);
+
+    cursor: pointer;
+
+    .icon {
+        display: inline;
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .text {
+        display: inline;
+        vertical-align: middle;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        text-align: end;
+
+    }
+
+    #dropdown-menu-align-right {
+        background-color: green;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.crud-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dropbox {
+
+    background-color: green;
+    background-clip: green;
+}
+
+.crud-inner-container {
+    width: 60%;
+    min-height: 380px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .crud-form {
+        margin-bottom: 25px;
+
+        .crud-formControl {
+            display: block;
+            width: 60%;
+            margin: 10px auto;
+
+            .crud-input,
+            .crud-select {
+                width: 100%;
+            }
+        }
+    }
+
+    .crud-submit {
+        width: 50%;
+        padding: 4px 5px;
+        margin: auto;
+        font-weight: bold;
+        border: none;
+    }
+
+
+
+    .crud-add-btn {
+        background: $primary-green !important;
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+            background: $secondary-green;
+        }
+    }
+
+    .crud-update-btn {
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+            background: $secondary-blue;
+        }
+    }
+
+    .crud-accept-btn {
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+            background: $secondary-lightblue;
+        }
+    }
+
+    .crud-view-btn {
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+            background: $secondary-lightgreen;
+        }
+    }
+
+    .crud-delete-btn {
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+            background: $secondary-red;
+        }
+    }
+
+    &:hover {
+        // border-radius: 10px;
+        // border-bottom: 5px solid;
+        // border-image-source: linear-gradient(90deg, rgba(200, 25, 39, 1) 0%, rgba(251, 133, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+        // border-image-slice: 1;
+
+        box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, 0.42);
+    }
+}
+
+.crud-innerS-container {
+    width: 160%;
+    min-height: 380px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    #date {
+        color: grey;
+    }
+
+    .crud-form {
+        margin-bottom: 25px;
+
+        .crud-formControl {
+            display: block;
+            width: 70%;
+            margin: 10px auto;
+
+            .crud-input {
+
+
+                width: 100%;
+            }
+
+            .crud-select {
+                width: 100%;
+
+            }
+        }
+    }
+
+    .crud-submit {
+        width: 50%;
+        padding: 4px 5px;
+        margin: auto;
+        font-weight: bold;
+        border: none;
+    }
+
+
+
+    .crud-add-btn {
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+            background: $secondary-green;
+        }
+    }
+
+    .crud-update-btn {
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+            background: $secondary-blue;
+        }
+    }
+
+    .crud-accept-btn {
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+            background: $secondary-lightblue;
+        }
+    }
+
+    .crud-view-btn {
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+            background: $secondary-lightgreen;
+        }
+    }
+
+    .crud-delete-btn {
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+            background: $secondary-red;
+        }
+    }
+
+    &:hover {
+        // border-radius: 10px;
+        // border-bottom: 5px solid;
+        // border-image-source: linear-gradient(90deg, rgba(200, 25, 39, 1) 0%, rgba(251, 133, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+        // border-image-slice: 1;
+
+        box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, 0.42);
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .MuiFormLabel-root,
+    .crud-inputLabel {
+        font-size: 0.75rem !important;
+        padding: 6px 0 4px !important;
+    }
+}
+
+
+@media only screen and (max-width: 340px) {
+    .crud-inner-container {
+        width: 90%;
+
+        .crud-submit {
+            width: 70%;
+
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 300px) {
+    .crud-button {
+        min-width: 170px;
+        padding: 8px 10px 8px 15px;
+        border-radius: 10px;
+        margin: 30px 20px 20px 20px;
+
+        .icon {
+            width: 25px;
+            height: 25px;
+        }
+
+        .text {
+            font-size: 12px;
+        }
+    }
+}

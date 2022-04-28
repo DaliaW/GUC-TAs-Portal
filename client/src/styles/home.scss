@@ -1,0 +1,56 @@
+@import "./colorSchema";
+
+html,
+body,
+#app,
+#app>div,
+#root,
+.App {
+    min-width: 100%;
+    background: #eee;
+}
+
+.myApp {
+    width: calc(100%-68px);
+    margin-top: 60px;
+    margin-left: 67px;
+    background: #eee;
+}
+
+
+@media all and (max-width: 380px) {
+    .myApp {
+        margin-top: 50px;
+        margin-left: 54px;
+        width: calc(100%-55px);
+    }
+}
+
+
+//general
+.general-line {
+    width: 90%;
+    margin: auto;
+}
+
+.general-header {
+    color: $primary-navy-blue;
+    font-size: 35px;
+    font-family: 'Times New Roman',
+        Times,
+        serif;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+}
+
+
+.modal-footer {
+    justify-content: center !important;
+}
+
+.modal-content {
+    margin-top: 30%;
+    border-radius: 10px !important;
+}
+
+//as8r haga 280 then 320
